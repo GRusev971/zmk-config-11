@@ -69,7 +69,7 @@
         
         settings_layer {
             bindings = <
-            &reset    &bootloader &bt_clear &trans &trans &trans &trans &trans &trans &trans
+            &sys_reset    &bootloader &bt_clear &trans &trans &trans &trans &trans &trans &trans
             &bt_next  &bt_prev    &bt_select &trans &trans &trans &trans &trans &trans &trans
             &trans    &trans      &trans     &trans &trans &trans &trans &trans &trans &trans
             &trans    &kp LCTRL   &kp LALT   &kp SPC &kp RET &kp BSPC &kp TAB &kp RALT &kp RCTRL &trans
