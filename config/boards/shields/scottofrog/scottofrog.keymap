@@ -6,7 +6,6 @@
 #define NUMBER 1
 #define SYMBOL 2
 #define SETTINGS 3
-#define LOCK 4
 
 #define COMBO_TIMEOUT 50
 
