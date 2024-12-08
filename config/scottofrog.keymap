@@ -49,7 +49,7 @@
         btset0 {
             bindings = <&tog 3>;
             key-positions = <0 1 2 7 8 9>;
-            layers = <3>;
+            layers = <0>;
         };
     };
 
@@ -107,10 +107,10 @@
 
         wow {
             bindings = <
-&mt N1 LS(KP_NUMBER_1)  &mt N2 LS(KP_NUMBER_2)  &mt N3 LS(KP_NUMBER_3)  &mt N4 LS(KP_NUMBER_4)  &kp N5     &kp N6   &kp N7   &kp N8  &kp N9  &kp N0
-&mt Q LS(Q)             &kp W                   &mt E LS(E)             &mt R LS(R)             &kp T      &kp Y    &kp U    &kp I   &kp O   &kp P
-&kp A                   &kp S                   &kp D                   &mt F LS(F)             &kp G      &kp H    &kp J    &kp K   &kp L   &kp FSLH
-&kp LEFT_CONTROL        &kp LEFT_ALT            &kp LEFT_SHIFT          &kp ESC                 &kp SPACE  &kp RET  &kp TAB  &none   &none   &mo 1
+&mt LS(N1) NUMBER_1  &mt LS(NUMBER_2) NUMBER_2  &mt LS(N3) NUMBER_3  &mt LS(N4) LS(NUMBER_4)  &mt LS(N5) N5  &mt LS(N6) NUMBER_6  &kp N7   &kp N8  &kp N9  &kp N0
+&mt LS(Q) Q          &kp W                      &mt LS(E) E          &mt LS(R) R              &kp T          &kp Y                &kp U    &kp I   &kp O   &kp P
+&kp A                &kp S                      &kp D                &mt LS(F) F              &kp G          &kp H                &kp J    &kp K   &kp L   &kp FSLH
+&kp LEFT_CONTROL     &kp LEFT_ALT               &kp LEFT_SHIFT       &kp ESC                  &kp SPACE      &kp RET              &kp TAB  &none   &none   &mo 1
             >;
         };
 
