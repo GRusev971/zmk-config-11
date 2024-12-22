@@ -60,27 +60,27 @@
             bindings = <&lt>, <&mo>;
 
             #binding-cells = <2>;
-            hold-trigger-key-positions = <39>;
             tapping-term-ms = <10>;
             flavor = "tap-preferred";
         };
 
-        tap_mo: tap_mo {
+        tap_mo_esc_v: tap_mo_esc_v {
             compatible = "zmk,behavior-tap-dance";
-            label = "TAP_MO";
+            label = "TAP_MO_ESC_V";
             #binding-cells = <0>;
             tapping-term-ms = <100>;
-            bindings = <&mo 2>, <&mo 1>;
+            bindings = <&kp ESCAPE>, <&kp V>;
         };
 
-        new_behavior: new_behavior {
+        tap_shift: tap_shift {
             compatible = "zmk,behavior-hold-tap";
-            label = "NEW_BEHAVIOR";
-            bindings = <&kp>, <&kp>;
+            label = "TAP_SHIFT";
+            bindings = <&kp>, <&sk>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <10>;
-            quick-tap-ms = <5>;
+            tapping-term-ms = <100>;
+            quick-tap-ms = <20>;
+            flavor = "balanced";
         };
     };
 
@@ -107,10 +107,10 @@
 
         wow {
             bindings = <
-&mt LS(N1) NUMBER_1  &mt LS(NUMBER_2) NUMBER_2  &mt LS(N3) NUMBER_3  &mt LS(N4) LS(NUMBER_4)  &mt LS(N5) N5  &mt LS(N6) NUMBER_6  &kp N7   &kp N8  &kp N9  &kp N0
-&mt LS(Q) Q          &kp W                      &mt LS(E) E          &mt LS(R) R              &kp T          &kp Y                &kp U    &kp I   &kp O   &kp P
-&kp A                &kp S                      &kp D                &mt LS(F) F              &kp G          &kp H                &kp J    &kp K   &kp L   &kp FSLH
-&kp LEFT_CONTROL     &kp LEFT_ALT               &kp LEFT_SHIFT       &kp ESC                  &kp SPACE      &kp RET              &kp TAB  &to 0   &tog 1  &to 0
+&kp N1                            &kp N2            &kp N3        &kp N4         &kp N5     &kp N6   &kp N7   &kp N8  &kp N9  &kp N0
+&kp Q                             &kp W             &kp E         &kp R          &kp T      &kp Y    &kp U    &kp I   &kp O   &kp P
+&kp A                             &kp S             &kp D         &kp F          &kp G      &kp H    &kp J    &kp K   &kp L   &kp FSLH
+&tap_shift LEFT_SHIFT LEFT_SHIFT  &kp LEFT_CONTROL  &kp LEFT_ALT  &tap_mo_esc_v  &kp SPACE  &kp RET  &kp TAB  &sl 0   &tog 1  &tog 1
             >;
         };
 
