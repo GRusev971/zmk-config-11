@@ -129,5 +129,14 @@
 &bootloader     &trans        &trans      &trans     &trans  &trans  &trans  &trans  &mo 1   &to 0
             >;
         };
+
+        def {
+            bindings = <
+&bl BL_INC  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+            >;
+        };
     };
 };
